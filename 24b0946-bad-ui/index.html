@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worst Brightness Adjuster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="darkness-overlay"></div>
+
+    <div class="ui-box">
+        <h2>Display Settings</h2>
+        <p>Adjust your screen brightness:</p>
+        
+        <div class="slider-container">
+            <input type="range" id="brightness-slider" min="0" max="100" value="50">
+            <div id="brightness-label">50%</div>
+        </div>
+        
+        <p class="hint">Note: Slider calibration is currently drifting.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

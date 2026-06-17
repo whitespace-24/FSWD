@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ui-box {
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    z-index: 10; 
+    position: relative;
+    width: 300px;
+}
+
+.slider-container {
+    margin: 20px 0;
+}
+
+#brightness-slider {
+    width: 100%;
+    cursor: pointer;
+}
+
+#brightness-label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hint {
+    font-size: 12px;
+    color: gray;
+    margin-top: 20px;
+}
+#darkness-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5; 
+    z-index: 5;
+    pointer-events: none; 
+}
